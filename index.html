@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Denis Wachira | Todo app</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div class="title-menu">
+          <div class="title">
+            <h1>TODO</h1>
+          </div>
+          <div class="moon">
+            <img src="./images/icon-moon.svg" alt="moon icon" />
+          </div>
+        </div>
+        <div class="add-list">
+          <input type="radio" id="toggle-all" />
+          <input type="text" id="new-todo" placeholder="Create a new todo..." />
+        </div>
+      </header>
+
+      <div id="todo-list">
+        <div class="todo">
+          <input type="radio" id="todo-1" />
+          <label for="todo-1">Create a todo list</label>
+        </div>
+        <!-- <hr /> -->
+        <div class="todo">
+          <input type="radio" id="todo-2" />
+          <label for="todo-2">Style the todo list</label>
+        </div>
+        <!-- <hr /> -->
+        <div class="todo">
+          <input type="radio" id="todo-3" />
+          <label for="todo-3">Add interactivity</label>
+        </div>
+        <!-- <hr /> -->
+        <div id="todo-actions">
+          <span id="items-left">3 items left</span>
+          <button id="all">All</button>
+          <button id="active">Active</button>
+          <button id="completed">Completed</button>
+          <button id="clear-completed">Clear Completed</button>
+        </div>
+      </div>
+      <div class="footer">
+        <p id="drag-and-drop">Drag and drop to reorder list</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
